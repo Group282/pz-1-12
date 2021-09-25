@@ -48,24 +48,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.grs-header{
-  background-color: black;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-star;
-;
-  height: 20%;
-  width: 100%;
-}
-.grs-nav{
-  background-color: red;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-}
-
 
 /* Extra small devices (portrait phones, less than 576px)*/
 /* No media query for `xs` since this is the default in Bootstrap*/
