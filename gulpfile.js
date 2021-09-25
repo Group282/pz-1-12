@@ -71,13 +71,13 @@ gulp.task('copy', async function () {
   gulp.src([
     'app/css/app.css'
   ])
-    .pipe(gulp.dest('dist/css'))
+    .pipe(gulp.dest('dist/css'));
 
   gulp.src('app/fonts/**/*')
-    .pipe(gulp.dest('dist/fonts'))
+    .pipe(gulp.dest('dist/fonts'));
 
   gulp.src('app/js/**/*')
-    .pipe(gulp.dest('dist/js'))
+    .pipe(gulp.dest('dist/js'));
 
   gulp.src('app/*.html')
     .pipe(gulp.dest('dist'));
@@ -86,7 +86,7 @@ gulp.task('copy', async function () {
 
 gulp.task('clear', function (callback) {
   return cache.clearAll();
-})
+});
 
 gulp.task('watch', function () {
   gulp.watch('app/scss/**/*.scss', gulp.parallel('sass'));
