@@ -1,0 +1,27 @@
+/*button and optgroupe*/
+.buttons {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 10px;
+}
+.buttons_opt {
+    width: 160px;
+    height: 30px;
+    color: #696969;
+    font-size: 18px;
+    font-weight: 400;
+}
+.buttons_bt {
+    width: 160px;
+    height: 30px;
+    background: rgb(241, 64, 20);
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: 400;
+}

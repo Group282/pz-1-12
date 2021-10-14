@@ -1,0 +1,27 @@
+.nav {
+    display: none;
+    font-size: 13px;
+    font-weight: 700;
+
+    &_link {
+        width: 60px;
+        height: 20px;
+        
+        background: #ccc;
+        margin: 10px 28px;
+        color: #ccc;
+        text-decoration: none;
+        opacity: .75;
+        transition: opacity .1s linear;
+    
+        &:first-child {
+        margin-left: 0px;
+        }
+
+        &:hover{
+        opacity: 1;
+        color: orange;
+        text-decoration: 2px underline;
+        }
+    }
+}

@@ -1,46 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
-  <title>PZ_1_10</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>PZ_1_12</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
+  <link rel="stylesheet" type="text/css" href="css/burger.css">
   <link rel="stylesheet" type="text/css" href="css/app.css">
 </head>
+
 <body>
 
-<script src="js/bundle.js"></script>
+  <script src="js/bundle.js"></script>
 
-<header class="grs-header">
-  <div class="grs-header__log">
-<div class="grs-header__nav">
-</div>
-    <div class="grs-navbar">
+
+  <!--Svg-->
+  <svg style="display: none;">
+
+    <symbol id="heart" viewBox="0 0 24 24">
+      <path
+        d="M12 4.419c-2.826-5.695-11.999-4.064-11.999 3.27 0 7.27 9.903 10.938 11.999 15.311 2.096-4.373 12-8.041 12-15.311 0-7.327-9.17-8.972-12-3.27z" />
+    </symbol>
+
+    <symbol id="loupe" viewBox="0 0 512.005 512.005">
+      <g>
+        <path
+          d="M505.749,475.587l-145.6-145.6c28.203-34.837,45.184-79.104,45.184-127.317c0-111.744-90.923-202.667-202.667-202.667
+                S0,90.925,0,202.669s90.923,202.667,202.667,202.667c48.213,0,92.48-16.981,127.317-45.184l145.6,145.6
+                c4.16,4.16,9.621,6.251,15.083,6.251s10.923-2.091,15.083-6.251C514.091,497.411,514.091,483.928,505.749,475.587z
+                 M202.667,362.669c-88.235,0-160-71.765-160-160s71.765-160,160-160s160,71.765,160,160S290.901,362.669,202.667,362.669z" />
+      </g>
+    </symbol>
+
+    <symbol id="eye" viewBox="0 0 488.85 488.85">
+      <g>
+        <path d="M244.425,98.725c-93.4,0-178.1,51.1-240.6,134.1c-5.1,6.8-5.1,16.3,0,23.1c62.5,83.1,147.2,134.2,240.6,134.2
+              s178.1-51.1,240.6-134.1c5.1-6.8,5.1-16.3,0-23.1C422.525,149.825,337.825,98.725,244.425,98.725z M251.125,347.025
+              c-62,3.9-113.2-47.2-109.3-109.3c3.2-51.2,44.7-92.7,95.9-95.9c62-3.9,113.2,47.2,109.3,109.3
+              C343.725,302.225,302.225,343.725,251.125,347.025z M248.025,299.625c-33.4,2.1-61-25.4-58.8-58.8c1.7-27.6,24.1-49.9,51.7-51.7
+              c33.4-2.1,61,25.4,58.8,58.8C297.925,275.625,275.525,297.925,248.025,299.625z" />
+      </g>
+    </symbol>
+  </svg>
+
+  <!--header-->
+  <header>
+    <div class="container container_header">
+      <div class="header_menu">
+
+
+        <!--nav-->
+        <nav class="nav">
+          <a class="nav_link" href="#"></a>
+          <a class="nav_link" href="#">Work</a>
+          <a class="nav_link" href="#">Work</a>
+          <a class="nav_link" href="#">Work</a>
+          <a class="nav_link" href="#">Work</a>
+          <a class="nav_link" href="#">Work</a>
+        </nav>
+
+        <div class="header_filling">
+          <div class="burger-menu">
+            <input id="menu-toggle" type="checkbox" />
+            <label class="menu-btn" for="menu-toggle">
+              <span></span>
+            </label>
+
+            <nav class="menubox">
+              <a class="menu-item" href="#"></a>
+              <a class="menu-item" href="#"></a>
+              <a class="menu-item" href="#"></a>
+              <a class="menu-item" href="#"></a>
+              <a class="menu-item" href="#"></a>
+              <a class="menu-item" href="#"></a>
+            </ul>
+          </div>>
+
+          <div class="search">
+            <input class="search-input" type="text" name="name" placeholder="">
+          </div>
+
+        </div>
+
+
+
+        <div class="heder_search">
+          <a class="heder_search_link" href="#">
+            <svg class="heder_search_icon">
+              <use xlink:href="#loupe"></use>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+    <!--main-->
+    <main class="main">
+
+      <div class="main_Slider" id="mainSlider">
+
+        <div class="text_intro">
+          <h1 class="intro_title">Have something to add or improve in corporate infrastructure?</h1>
+          <sub class="intro_title-sub">Start your own pet project!</sub>
+
+        </div>
+
+
+        <div class="text_intro">
+          <h1 class="intro_title">To do this!</h1>
+          <sub class="intro_title-sub">Anothe one!</sub>
+
+        </div>
+
+
+        <div class="text_intro">
+          <h1 class="intro_title">Try againe!</h1>
+          <sub class="intro_title-sub">One more!</sub>
+
+        </div>
+
+
+      </div>
+
+
+
+    </main>
+  </header>
+
+  <!--buttons-->
+  <div class="container">
+    <div class="buttons">
+      <select class="buttons_opt">
+        <optgroup label="Projects:">
+          <option value="All Projects">All Projects</option>
+          <option value="My Projects">My Projects</option>
+          <option value="Team Projects">Team Projects</option>
+        </optgroup>
+      </select>
+      <button class="buttons_bt">New Projects</button>
+    </div>
+  </div>
+  <!--Cards-->
+  <div class="cards">
+    <div class="container">
+      <div class="cards_all">
+        <div class="cards_project">
+          <div class="cards_filling fone_1">
+            <h5 class="cards_filling-name">Biometrics Autentification</h5>
+            <p class="cards_filling-content">Following the main US election candidants analyzing milions of tional trned
+              on each of the candidantes. twits of their followers with comments we can see (...)</p>
+          </div>
+          <div class="cards_footer">
+            <div class="teaminfo">
+              <p>Team</p>
+              <img class="team_img" src="image/5977114723b1f0a40fc9a036fe7757d0.jpg" alt="">
+              <img class="team_img" src="image/74bf2ba3483133726ae57c2e99d0fb4f.jpg" alt="">
+              <img class="team_img" alt="" style="background-color: aquamarine;">
+              <img class="team_img" alt="" style="background-color: rosybrown;">
+            </div>
+            <div class="team-folovers">
+              <p class="team_link">
+                <svg class="team-folovers_icon">
+                  <use xlink:href="#heart"></use>
+                </svg>
+              <p>1</p>
+              </p>
+              <p class="team_link">
+                <svg class="team-folovers_icon">
+                  <use xlink:href="#eye"></use>
+                </svg>
+              <p>0</p>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="cards_project">
+          <div class="cards_filling">
+            <h5 class="cards_filling-name">Biometrics Autentification</h5>
+            <p class="cards_filling-content">Following the main US election candidants analyzing milions of tional trned
+              on each of the candidantes. twits of their followers with comments we can see (...)</p>
+          </div>
+          <div class="cards_footer">
+            <div class="teaminfo">
+              <p>Team</p>
+              <img class="team_img" src="image/5977114723b1f0a40fc9a036fe7757d0.jpg" alt="">
+              <img class="team_img" src="image/74bf2ba3483133726ae57c2e99d0fb4f.jpg" alt="">
+              <img class="team_img" alt="" style="background-color: aquamarine;">
+              <img class="team_img" alt="" style="background-color: rosybrown;">
+            </div>
+            <div class="team-folovers">
+              <p class="team_link">
+                <svg class="team-folovers_icon">
+                  <use xlink:href="#heart"></use>
+                </svg>
+              <p>1</p>
+              </p>
+              <p class="team_link">
+                <svg class="team-folovers_icon">
+                  <use xlink:href="#eye"></use>
+                </svg>
+              <p>0</p>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="cards_project">
+          <div class="cards_filling">
+            <h5 class="cards_filling-name">Biometrics Autentification</h5>
+            <p class="cards_filling-content">Following the main US election candidants analyzing milions of tional trned
+              on each of the candidantes. twits of their followers with comments we can see (...)</p>
+          </div>
+          <div class="cards_footer">
+            <div class="teaminfo">
+              <p>Team</p>
+              <img class="team_img" src="image/5977114723b1f0a40fc9a036fe7757d0.jpg" alt="">
+              <img class="team_img" src="image/74bf2ba3483133726ae57c2e99d0fb4f.jpg" alt="">
+              <img class="team_img" alt="" style="background-color: aquamarine;">
+              <img class="team_img" alt="" style="background-color: rosybrown;">
+            </div>
+            <div class="team-folovers">
+              <p class="team_link">
+                <svg class="team-folovers_icon">
+                  <use xlink:href="#heart"></use>
+                </svg>
+              <p>1</p>
+              </p>
+              <p class="team_link">
+                <svg class="team-folovers_icon">
+                  <use xlink:href="#eye"></use>
+                </svg>
+              <p>0</p>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="cards_project">
+          <div class="cards_filling">
+            <h5 class="cards_filling-name">Biometrics Autentification</h5>
+            <p class="cards_filling-content">Following the main US election candidants analyzing milions of tional trned
+              on each of the candidantes. twits of their followers with comments we can see (...)</p>
+          </div>
+          <div class="cards_footer">
+            <div class="teaminfo">
+              <p>Team</p>
+              <img class="team_img" src="image/5977114723b1f0a40fc9a036fe7757d0.jpg" alt="">
+              <img class="team_img" src="image/74bf2ba3483133726ae57c2e99d0fb4f.jpg" alt="">
+              <img class="team_img" alt="" style="background-color: aquamarine;">
+              <img class="team_img" alt="" style="background-color: rosybrown;">
+            </div>
+            <div class="team-folovers">
+              <p class="team_link">
+                <svg class="team-folovers_icon">
+                  <use xlink:href="#heart"></use>
+                </svg>
+              <p>1</p>
+              </p>
+              <p class="team_link">
+                <svg class="team-folovers_icon">
+                  <use xlink:href="#eye"></use>
+                </svg>
+              <p>0</p>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards_project">
+          <div class="cards_filling">
+            <h5 class="cards_filling-name">Biometrics Autentification</h5>
+            <p class="cards_filling-content">Following the main US election candidants analyzing milions of tional trned
+              on each of the candidantes. twits of their followers with comments we can see (...)</p>
+          </div>
+          <div class="cards_footer">
+            <div class="teaminfo">
+              <p>Team</p>
+              <img class="team_img" src="image/5977114723b1f0a40fc9a036fe7757d0.jpg" alt="">
+              <img class="team_img" src="image/74bf2ba3483133726ae57c2e99d0fb4f.jpg" alt="">
+              <img class="team_img" alt="" style="background-color: aquamarine;">
+              <img class="team_img" alt="" style="background-color: rosybrown;">
+            </div>
+            <div class="team-folovers">
+              <p class="team_link">
+                <svg class="team-folovers_icon">
+                  <use xlink:href="#heart"></use>
+                </svg>
+              <p>1</p>
+              </p>
+              <p class="team_link">
+                <svg class="team-folovers_icon">
+                  <use xlink:href="#eye"></use>
+                </svg>
+              <p>0</p>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
 
     </div>
-    <div class="grs-search">
-      <input class="grs-search-input" >
-      <button class="grs-search-btn"> </button>
-    </div>
-    <div class="grs-btn">
-      <button class="grs-sing-in"> Sing in</button>
-      <button class="grs-sing-in">Sing up</button>
-    </div>
-</div>
-
-
-</header>
-
-<section class="grs-main">
-
-  <div class="grs-section">
-
-    <h2 class="grs-main-header"></h2>
-    <p class="grs-main-tex"></p>
   </div>
 
-
-
-</section>
-
+  <script src="js/app.js"></script>
 </body>
+
 </html>

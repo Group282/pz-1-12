@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "gulp default",
-    "prod": "gulp build"
+    "dev": "../../Desktop/pz-1-12/node_modules/.bin/gulp default",
+    "prod": "../../Desktop/pz-1-12/node_modules/.bin/gulp build"
   },
   "repository": {
     "type": "git",
