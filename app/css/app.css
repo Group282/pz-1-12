@@ -52,6 +52,176 @@ table {
 /* Extra small devices (portrait phones, less than 576px)*/
 /* No media query for `xs` since this is the default in Bootstrap*/
 /*Small devices (landscape phones, 576px and up)*/
+@media (max-width: 768px) {
+  #carouselExampleControls {
+    visibility: hidden;
+    display: none;
+  }
+
+  .items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .header__list {
+    display: none;
+  }
+}
 /*Medium devices (tablets, 768px and up)*/
+@media (max-width: 992px) {
+  #carouselExampleControls {
+    display: block;
+  }
+
+  .items {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+  .header__list {
+    display: block;
+  }
+}
 /*Large devices (desktops, 992px and up)*/
 /*Extra large devices (large desktops, 1200px and up)*/
+body {
+  background: rgba(35, 32, 35, 0.92);
+}
+
+.header {
+  height: 5%;
+  background: rgba(45, 42, 45, 0.9);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header .header__list {
+  width: 60%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.header .header__list .header__list_item {
+  display: inline;
+  padding-top: 1.5%;
+}
+.header .header__list .header__list_item a {
+  text-decoration: none;
+  color: #000000;
+}
+.header .header__list .header__list_item a:hover {
+  padding-bottom: 15px;
+  border-bottom: 3px solid #E08326FF;
+}
+.header .header__user {
+  margin-right: 20px;
+}
+.header .header__user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+.middle {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: rgba(35, 32, 35, 0.92);
+}
+.middle .middle__select {
+  margin-left: 20px;
+}
+.middle .middle__button {
+  background: #E08326FF;
+  border: none;
+  margin-right: 20px;
+}
+
+.items {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  background: rgba(35, 32, 35, 0.92);
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.items .item {
+  background: gray;
+  text-align: center;
+  margin-top: 10px;
+  border: 10px solid rgba(35, 32, 35, 0.82);
+}
+.items .item .item__title {
+  font-size: 24px;
+  margin-bottom: 80px;
+}
+.items .item .item__bottom {
+  background: white;
+  height: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.items .item .item__bottom .item__bottom_team {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.items .item .item__bottom .item__bottom_team .item__bottom_team_list .item__bottom_team_list_item {
+  display: inline;
+}
+.items .item .item__bottom .item__bottom_team .item__bottom_team_list .user_photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  margin-top: 15px;
+}
+.items .item .item__bottom .item__bottom_options {
+  margin-top: 20px;
+}
+.items .item .item__bottom .item__bottom_options .item__bottom_options_item {
+  display: inline;
+}
+
+#carouselExampleControls {
+  display: block;
+}

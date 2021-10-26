@@ -2,21 +2,38 @@
 /* No media query for `xs` since this is the default in Bootstrap*/
 
 /*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
-
+@media (max-width: 768px) {
+#carouselExampleControls{
+  visibility: hidden;
+  display: none;
+}
+  .items{
+    flex-direction: column;
+  }
+  .header__list{
+    display: none;
+  }
 }
 
 /*Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {
-
+@media (max-width: 992px) {
+  #carouselExampleControls{
+    display: block;
+  }
+  .items{
+    flex-direction: row;
+  }
+  .header__list{
+    display: block;
+  }
 }
 
 /*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {
+@media (max-width: 1200px) {
 
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
+@media (min-width: 200000px) {
 
 }
