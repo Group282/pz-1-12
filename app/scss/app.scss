@@ -5,101 +5,21 @@
 body{
   background: rgba(35,32,35,0.92);
 }
-
-.header{
-  height: 5%;
-  background: rgba(45,42,45,0.9);
-  display: flex;
-  justify-content: space-between;
-  .header__list{
-    width: 60%;
-    display: flex;
-    justify-content: space-around;
-    .header__list_item{
-      display: inline;
-      padding-top:1.5%;
-      a{
-        text-decoration: none;
-        color: #000000;
-        &:hover{
-          padding-bottom: 15px;
-          border-bottom: 3px solid #E08326FF;
-        }
-      }
-    }
-  }
-  .header__user{
-    margin-right: 20px;
-    img{
-      width: 50px;
-      height: 50px;
-      border-radius: 25px;
-    }
-  }
-}
-
-.middle{
-  display: flex;
-  justify-content: space-between;
-  padding-top: 10px;
-  padding-bottom: 10px;
+.dark-bg{
   background: rgba(35,32,35,0.92);
-  .middle__select{
-    margin-left: 20px;
-  }
-  .middle__button{
-    background: #E08326FF;
-    border:none;
-    margin-right: 20px;
-  }
 }
-.items{
-  display: flex;
-  justify-content: space-around;
-  background: rgba(35,32,35,0.92);
-  flex-wrap: wrap;
-  .item{
-    background: gray;
-    text-align: center;
-    margin-top: 10px;
-    border: 10px solid rgba(35,32,35,0.82);
-    .item__title{
-      font-size: 24px;
-      margin-bottom: 80px;
-    }
-    .item__bottom{
-      background: white;
-      height: 60px;
-      display: flex;
-      justify-content: space-between;
-      padding-left: 20px;
-      padding-right: 20px;
-      .item__bottom_team{
-        display: flex;
-        align-items:center;
-        .item__bottom_team_list{
-          .item__bottom_team_list_item{
-            display: inline;
-          }
-          .user_photo{
-            width: 50px;
-            height: 50px;
-            border-radius: 25px;
-            margin-top: 15px;
-          }
-        }
-      }
-      .item__bottom_options{
-        margin-top: 20px;
-        .item__bottom_options_item{
-          display: inline;
-        }
-      }
-    }
-  }
+.color-bg{
+  background: #6a3b75;
+}
+.user_photo{
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
 }
 
-#carouselExampleControls{
-  display: block;
+.watches{
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 10px;
 }
 

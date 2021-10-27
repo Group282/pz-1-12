@@ -9,37 +9,48 @@
 </head>
 <body>
 
-<header class="header">
-  <ul class="header__list">
-    <li class="header__list_item">
-      <a href="#">Something</a>
-    </li>
-    <li class="header__list_item">
-      <a href="#">Something</a>
-    </li>
-    <li class="header__list_item">
-      <a href="#">Something</a>
-    </li>
-    <li class="header__list_item">
-      <a href="#">Something</a>
-    </li>
-    <li class="header__list_item">
-      <a href="#">Something</a>
-    </li>
-    <li class="header__list_item">
-      <a href="#">Something</a>
-    </li>
-  </ul>
-  <div class="header__user">
-    <img src="./img/eye-fill.svg" alt="">
-    <img src="./img/suit-heart-fill.svg" alt="">
-    <img src="./img/week4_700.jpg" alt="">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Bootstrap</a>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Something</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Something</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Something</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Something</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Something</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2 bg-dark" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg>
+        </button>
+        <button class="btn btn-outline-secondary ms-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-3x3" viewBox="0 0 16 16">
+            <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5v-13zM1.5 1a.5.5 0 0 0-.5.5V5h4V1H1.5zM5 6H1v4h4V6zm1 4h4V6H6v4zm-1 1H1v3.5a.5.5 0 0 0 .5.5H5v-4zm1 0v4h4v-4H6zm5 0v4h3.5a.5.5 0 0 0 .5-.5V11h-4zm0-1h4V6h-4v4zm0-5h4V1.5a.5.5 0 0 0-.5-.5H11v4zm-1 0V1H6v4h4z"/>
+          </svg>
+        </button>
+        <img class="user_photo ms-1" src="./img/week4_700.jpg" alt="">
+      </form>
+    </div>
   </div>
-</header>
+</nav>
 
-<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+<div id="carouselExampleControls" class="carousel slide d-none d-sm-block" data-bs-ride="carousel">
   <div class="carousel-inner">
-    
+
     <div class="carousel-item active">
       <img src="./img/images.jfif" class="d-block w-100" alt="...">
     </div>
@@ -60,140 +71,178 @@
   </button>
 </div>
 
-<div class="middle">
-  <select name="" id="" class="middle__select">
-    <option value="">Lorem ipsum.</option>
-    <option value="">Lorem ipsum.</option>
-  </select>
-  <input type="button" value="New Project" class="middle__button">
+
+<div class="container-fluid">
+  <div class="row">
+   <div class="d-none d-md-block d-lg-none col-md-4 bg-light">
+     <p class="text-opacity-25 mt-3">My Projects</p>
+     <div class="card mt-3 col-md-11 d-inline-block">
+       <div class="card-body">
+         <p class="card-header text-center">Biometric Authentification</p>
+         <p class="card-text mt-5 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam atque commodi cum cumque fugiat quis quo quod sit sunt. Dolores pariatur rerum tenetur vitae!</p>
+         <div class="card-footer d-flex justify-content-between">
+           <div class="d-flex">
+             <p class="watches ms-1">Team</p>
+             <img class="user_photo ms-1" src="./img/week4_700.jpg" alt="">
+             <img class="user_photo ms-1" src="./img/week4_700.jpg" alt="">
+           </div>
+           <div class="d-flex align-items-center">
+             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+               <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+             </svg>
+             <p class="ms-1 watches">1</p>
+             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye-fill ms-1" viewBox="0 0 16 16">
+               <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+               <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+             </svg>
+             <p class="ms-1 watches">1</p>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+   <div class="col-12 col-md-8 col-lg-12 pb-5 dark-bg">
+     <div class="px-2 container-fluid d-flex justify-content-between mt-3">
+       <div class="btn-group">
+         <button type="button" class="btn btn-danger">Действие</button>
+         <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+           <span class="visually-hidden">Переключатель выпадающего списка</span>
+         </button>
+         <ul class="dropdown-menu">
+           <li><a class="dropdown-item" href="#">lorem</a></li>
+           <li><a class="dropdown-item" href="#">lorem</a></li>
+         </ul>
+       </div>
+       <button class="btn btn-warning">New Project</button>
+     </div>
+     <div class="row">
+       <div class="card mt-3 col-sm-12 col-md-6 col-xl-3 d-inline-block">
+         <div class="card-body">
+           <p class="card-header text-center">Biometric Authentification</p>
+           <p class="card-text mt-5 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam atque commodi cum cumque fugiat quis quo quod sit sunt. Dolores pariatur rerum tenetur vitae!</p>
+           <div class="card-footer d-flex justify-content-between">
+             <div class="d-flex">
+               <p class="watches ms-1">Team</p>
+               <img class="user_photo ms-1" src="./img/week4_700.jpg" alt="">
+               <img class="user_photo ms-1" src="./img/week4_700.jpg" alt="">
+             </div>
+             <div class="d-flex align-items-center">
+               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                 <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+               </svg>
+               <p class="ms-1 watches">1</p>
+               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye-fill ms-1" viewBox="0 0 16 16">
+                 <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                 <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+               </svg>
+               <p class="ms-1 watches">1</p>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="card mt-3 col-sm-12 col-md-6 col-xl-3 d-inline-block">
+         <div class="card-body">
+           <p class="card-header text-center">Biometric Authentification</p>
+           <p class="card-text mt-5 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam atque commodi cum cumque fugiat quis quo quod sit sunt. Dolores pariatur rerum tenetur vitae!</p>
+           <div class="card-footer d-flex justify-content-between">
+             <div class="d-flex">
+               <p class="watches ms-1">Team</p>
+               <img class="user_photo ms-1" src="./img/week4_700.jpg" alt="">
+               <img class="user_photo ms-1" src="./img/week4_700.jpg" alt="">
+             </div>
+             <div class="d-flex align-items-center">
+               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                 <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+               </svg>
+               <p class="ms-1 watches">1</p>
+               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye-fill ms-1" viewBox="0 0 16 16">
+                 <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                 <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+               </svg>
+               <p class="ms-1 watches">1</p>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="card mt-3 col-sm-12 col-md-6 col-xl-3 d-inline-block">
+         <div class="card-body">
+           <p class="card-header text-center">Biometric Authentification</p>
+           <p class="card-text mt-5 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam atque commodi cum cumque fugiat quis quo quod sit sunt. Dolores pariatur rerum tenetur vitae!</p>
+           <div class="card-footer d-flex justify-content-between">
+             <div class="d-flex">
+               <p class="watches ms-1">Team</p>
+               <img class="user_photo ms-1" src="./img/week4_700.jpg" alt="">
+               <img class="user_photo ms-1" src="./img/week4_700.jpg" alt="">
+             </div>
+             <div class="d-flex align-items-center">
+               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                 <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+               </svg>
+               <p class="ms-1 watches">1</p>
+               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye-fill ms-1" viewBox="0 0 16 16">
+                 <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                 <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+               </svg>
+               <p class="ms-1 watches">1</p>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="card mt-3 col-sm-12 col-md-6 col-xl-3 d-inline-block">
+         <div class="card-body">
+           <p class="card-header text-center">Biometric Authentification</p>
+           <p class="card-text mt-5 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam atque commodi cum cumque fugiat quis quo quod sit sunt. Dolores pariatur rerum tenetur vitae!</p>
+           <div class="card-footer d-flex justify-content-between">
+             <div class="d-flex">
+               <p class="watches ms-1">Team</p>
+               <img class="user_photo ms-1" src="./img/week4_700.jpg" alt="">
+               <img class="user_photo ms-1" src="./img/week4_700.jpg" alt="">
+             </div>
+             <div class="d-flex align-items-center">
+               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                 <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+               </svg>
+               <p class="ms-1 watches">1</p>
+               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye-fill ms-1" viewBox="0 0 16 16">
+                 <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                 <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+               </svg>
+               <p class="ms-1 watches">1</p>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="card mt-3 col-sm-12 col-md-6 col-xl-3 d-inline-block">
+         <div class="card-body">
+           <p class="card-header text-center">Biometric Authentification</p>
+           <p class="card-text mt-5 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam atque commodi cum cumque fugiat quis quo quod sit sunt. Dolores pariatur rerum tenetur vitae!</p>
+           <div class="card-footer d-flex justify-content-between">
+             <div class="d-flex">
+               <p class="watches ms-1">Team</p>
+               <img class="user_photo ms-1" src="./img/week4_700.jpg" alt="">
+               <img class="user_photo ms-1" src="./img/week4_700.jpg" alt="">
+             </div>
+             <div class="d-flex align-items-center">
+               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                 <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+               </svg>
+               <p class="ms-1 watches">1</p>
+               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye-fill ms-1" viewBox="0 0 16 16">
+                 <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                 <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+               </svg>
+               <p class="ms-1 watches">1</p>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+
+   </div>
+  </div>
 </div>
 
-<div class="items">
-  <div class="item col-xxl-3 col-xl-4 col-md-6 col-sm-12">
-    <p class="item__title">Biometric Authentification</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad blanditiis eligendi facere minus modi porro praesentium qui quis, tenetur voluptates?</p>
-    <div class="item__bottom">
-      <div class="item__bottom_team">
-        <span>Team</span>
-        <ul class="item__bottom_team_list">
-          <li class="item__bottom_team_list_item">
-            <img src="./img/week4_700.jpg" class="user_photo" alt="">
-          </li>
-          <li class="item__bottom_team_list_item">
-            <img src="./img/week4_700.jpg" class="user_photo" alt="">
-          </li>
-        </ul>
-      </div>
-      <ul class="item__bottom_options">
-        <li class="item__bottom_options_item">
-          <img src="./img/suit-heart-fill.svg" alt="">
-        </li>
-        <li class="item__bottom_options_item">
-          <span>1</span>
-        </li>
-        <li class="item__bottom_options_item">
-          <img src="./img/eye-fill.svg" alt="">
-        </li>
-        <li class="item__bottom_options_item">
-          <span>1</span>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class="item col-xxl-3 col-xl-4 col-md-6 col-sm-12">
-    <p class="item__title">Biometric Authentification</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad blanditiis eligendi facere minus modi porro praesentium qui quis, tenetur voluptates?</p>
-    <div class="item__bottom">
-      <div class="item__bottom_team">
-        <span>Team</span>
-        <ul class="item__bottom_team_list">
-          <li class="item__bottom_team_list_item">
-            <img src="./img/week4_700.jpg" class="user_photo" alt="">
-          </li>
-          <li class="item__bottom_team_list_item">
-            <img src="./img/week4_700.jpg" class="user_photo" alt="">
-          </li>
-        </ul>
-      </div>
-      <ul class="item__bottom_options">
-        <li class="item__bottom_options_item">
-          <img src="./img/suit-heart-fill.svg" alt="">
-        </li>
-        <li class="item__bottom_options_item">
-          <span>1</span>
-        </li>
-        <li class="item__bottom_options_item">
-          <img src="./img/eye-fill.svg" alt="">
-        </li>
-        <li class="item__bottom_options_item">
-          <span>1</span>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class="item col-xxl-3 col-xl-4 col-md-6 col-sm-12">
-    <p class="item__title">Biometric Authentification</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad blanditiis eligendi facere minus modi porro praesentium qui quis, tenetur voluptates?</p>
-    <div class="item__bottom">
-      <div class="item__bottom_team">
-        <span>Team</span>
-        <ul class="item__bottom_team_list">
-          <li class="item__bottom_team_list_item">
-            <img src="./img/week4_700.jpg" class="user_photo" alt="">
-          </li>
-          <li class="item__bottom_team_list_item">
-            <img src="./img/week4_700.jpg" class="user_photo" alt="">
-          </li>
-        </ul>
-      </div>
-      <ul class="item__bottom_options">
-        <li class="item__bottom_options_item">
-          <img src="./img/suit-heart-fill.svg" alt="">
-        </li>
-        <li class="item__bottom_options_item">
-          <span>1</span>
-        </li>
-        <li class="item__bottom_options_item">
-          <img src="./img/eye-fill.svg" alt="">
-        </li>
-        <li class="item__bottom_options_item">
-          <span>1</span>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class="item col-xxl-3 col-xl-4 col-md-6 col-sm-12">
-    <p class="item__title">Biometric Authentification</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad blanditiis eligendi facere minus modi porro praesentium qui quis, tenetur voluptates?</p>
-    <div class="item__bottom">
-      <div class="item__bottom_team">
-        <span>Team</span>
-        <ul class="item__bottom_team_list">
-          <li class="item__bottom_team_list_item">
-            <img src="./img/week4_700.jpg" class="user_photo" alt="">
-          </li>
-          <li class="item__bottom_team_list_item">
-            <img src="./img/week4_700.jpg" class="user_photo" alt="">
-          </li>
-        </ul>
-      </div>
-      <ul class="item__bottom_options">
-        <li class="item__bottom_options_item">
-          <img src="./img/suit-heart-fill.svg" alt="">
-        </li>
-        <li class="item__bottom_options_item">
-          <span>1</span>
-        </li>
-        <li class="item__bottom_options_item">
-          <img src="./img/eye-fill.svg" alt="">
-        </li>
-        <li class="item__bottom_options_item">
-          <span>1</span>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
+
 
 
 
