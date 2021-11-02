@@ -53,5 +53,37 @@ table {
 /* No media query for `xs` since this is the default in Bootstrap*/
 /*Small devices (landscape phones, 576px and up)*/
 /*Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px) {
+  .dark-bg {
+    background-color: antiquewhite;
+  }
+}
 /*Large devices (desktops, 992px and up)*/
 /*Extra large devices (large desktops, 1200px and up)*/
+body {
+  background: rgba(35, 32, 35, 0.92);
+}
+
+.dark-bg {
+  background: rgba(35, 32, 35, 0.92);
+}
+
+.bg-white {
+  background: white !important;
+}
+
+.color-bg {
+  background: #6a3b75;
+}
+
+.user_photo {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+}
+
+.watches {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 10px;
+}
