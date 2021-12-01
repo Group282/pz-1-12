@@ -1,3 +1,44 @@
 @import "variables";
 @import "reset";
 @import "media-query";
+
+body{
+  background: rgba(35,32,35,0.92);
+}
+.dark-bg{
+  background: rgba(35,32,35,0.92);
+}
+
+.bg-white{
+  background: white!important;
+}
+.color-bg{
+  background: #6a3b75;
+}
+.user_photo{
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+}
+
+.watches{
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.virsta-size{
+  width: 80%;
+  display: flex;
+}
+
+.virsta-line{
+  height: 30px;
+}
+
+.virsta_size-search{
+  width: 300px;
+  height: 30px !important;
+  background: $background-color-header_search;
+}
+

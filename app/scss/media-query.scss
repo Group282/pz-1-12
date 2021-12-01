@@ -1,22 +1,113 @@
 /* Extra small devices (portrait phones, less than 576px)*/
 /* No media query for `xs` since this is the default in Bootstrap*/
 
-/*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
+/*Devices (768 and up)*/
+@media (min-width: 1px) {
+  .virsta-carousel{
+    display: none;
+  }
 
+  .virsta-direction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .virsta-card{
+    width: 65%;
+    height: auto;
+  }
+
+  .virsta-png_list{
+    display: inline;
+  }
+
+  .virsta-png_grid{
+    display: none;
+  }
+
+  .virsta-flex_justify{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .virsta-window{
+    display: none;
+  }
+
+  .virsta-background{
+    background: $background-color-div !important;
+  }
 }
 
-/*Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {
+/*Devices (1024 and up)*/
+@media (min-width: 1024px) {
+  .virsta-line{
+    display: none;
+  }
 
+  .virsta-carousel{
+    display: inline;
+  }
+
+  .virsta-direction{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .virsta-card{
+    width: 45%;
+    height: auto;
+  }
+
+  .virsta-png_list{
+    display: none;
+  }
+
+  .virsta-png_grid{
+    display: inline;
+  }
+
+  .virsta-flex_justify{
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
-/*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {
+/*Devices (tablets, 1280 and up)*/
+@media (min-width: 1280px) {
+  .virsta-window{
+    height: 165vh;
+    width: 50%;
+    display: inline;
+    background: $background-color-header_search;
+  }
 
+  .virsta-card1{
+    width: 90%;
+    height: auto;
+  }
+
+  .virsta-background{
+    background: $background-color-div2 !important;
+  }
 }
 
-/*Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
+/*Devices (desktops, 1440 and up)*/
+@media (min-width: 1440px) {
+  .virsta-window{
+    display: none;
+  }
 
+  .virsta-background{
+    background: $background-color-div !important;
+  }
+
+  .virsta-card{
+    width: 23%;
+    height: auto;
+  }
 }
+
