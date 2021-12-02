@@ -66,7 +66,6 @@ Follow this pattern for organization of developed components.
 # Useful links
 * [Bootsrap](https://getbootstrap.com/).
 * [Browsersync + Gulp.js](https://browsersync.io/docs/gulp#gulp-sass-css).
-* [How nth-child Works](https://css-tricks.com/how-nth-child-works/).
 * [Gulp 4: The new task execution system](https://fettblog.eu/gulp-4-parallel-and-series/).
 * [Getting started with CSS sourcemaps](https://medium.com/@toolmantim/getting-started-with-css-sourcemaps-and-in-browser-sass-editing-b4daab987fb0).
 * [Sourcemaps](https://symfonycasts.com/screencast/gulp/sourcemaps).
