@@ -1,315 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
   <title>PZ_1_12</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
-  <link rel="stylesheet" type="text/css" href="css/burger.css">
   <link rel="stylesheet" type="text/css" href="css/app.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
-
 <body>
 
-  <script src="js/bundle.js"></script>
-
-
-  <!--Svg-->
-  <svg style="display: none;">
-
-    <symbol id="heart" viewBox="0 0 24 24">
-      <path
-        d="M12 4.419c-2.826-5.695-11.999-4.064-11.999 3.27 0 7.27 9.903 10.938 11.999 15.311 2.096-4.373 12-8.041 12-15.311 0-7.327-9.17-8.972-12-3.27z" />
-    </symbol>
-
-    <symbol id="loupe" viewBox="0 0 512.005 512.005">
-      <g>
-        <path
-          d="M505.749,475.587l-145.6-145.6c28.203-34.837,45.184-79.104,45.184-127.317c0-111.744-90.923-202.667-202.667-202.667
-                S0,90.925,0,202.669s90.923,202.667,202.667,202.667c48.213,0,92.48-16.981,127.317-45.184l145.6,145.6
-                c4.16,4.16,9.621,6.251,15.083,6.251s10.923-2.091,15.083-6.251C514.091,497.411,514.091,483.928,505.749,475.587z
-                 M202.667,362.669c-88.235,0-160-71.765-160-160s71.765-160,160-160s160,71.765,160,160S290.901,362.669,202.667,362.669z" />
-      </g>
-    </symbol>
-
-    <symbol id="eye" viewBox="0 0 488.85 488.85">
-      <g>
-        <path d="M244.425,98.725c-93.4,0-178.1,51.1-240.6,134.1c-5.1,6.8-5.1,16.3,0,23.1c62.5,83.1,147.2,134.2,240.6,134.2
-              s178.1-51.1,240.6-134.1c5.1-6.8,5.1-16.3,0-23.1C422.525,149.825,337.825,98.725,244.425,98.725z M251.125,347.025
-              c-62,3.9-113.2-47.2-109.3-109.3c3.2-51.2,44.7-92.7,95.9-95.9c62-3.9,113.2,47.2,109.3,109.3
-              C343.725,302.225,302.225,343.725,251.125,347.025z M248.025,299.625c-33.4,2.1-61-25.4-58.8-58.8c1.7-27.6,24.1-49.9,51.7-51.7
-              c33.4-2.1,61,25.4,58.8,58.8C297.925,275.625,275.525,297.925,248.025,299.625z" />
-      </g>
-    </symbol>
-  </svg>
-
-  <!--header-->
-  <header>
-    <div class="container container_header">
-      <div class="header_menu">
-
-
-        <!--nav-->
-        <nav class="nav">
-          <a class="nav_link" href="#"></a>
-          <a class="nav_link" href="#">Work</a>
-          <a class="nav_link" href="#">Work</a>
-          <a class="nav_link" href="#">Work</a>
-          <a class="nav_link" href="#">Work</a>
-          <a class="nav_link" href="#">Work</a>
-        </nav>
-
-        <div class="header_filling">
-          <div class="burger-menu">
-            <input id="menu-toggle" type="checkbox" />
-            <label class="menu-btn" for="menu-toggle">
-              <span></span>
-            </label>
-
-            <nav class="menubox">
-              <a class="menu-item" href="#"></a>
-              <a class="menu-item" href="#"></a>
-              <a class="menu-item" href="#"></a>
-              <a class="menu-item" href="#"></a>
-              <a class="menu-item" href="#"></a>
-              <a class="menu-item" href="#"></a>
-            </ul>
-          </div>>
-
-          <div class="search">
-            <input class="search-input" type="text" name="name" placeholder="">
-          </div>
-
-        </div>
-
-
-
-        <div class="heder_search">
-          <a class="heder_search_link" href="#">
-            <svg class="heder_search_icon">
-              <use xlink:href="#loupe"></use>
-            </svg>
-          </a>
-        </div>
-
-      </div>
-    </div>
-    <!--main-->
-    <main class="main">
-
-      <div class="main_Slider" id="mainSlider">
-
-        <div class="text_intro">
-          <h1 class="intro_title">Have something to add or improve in corporate infrastructure?</h1>
-          <sub class="intro_title-sub">Start your own pet project!</sub>
-
-        </div>
-
-
-        <div class="text_intro">
-          <h1 class="intro_title">To do this!</h1>
-          <sub class="intro_title-sub">Anothe one!</sub>
-
-        </div>
-
-
-        <div class="text_intro">
-          <h1 class="intro_title">Try againe!</h1>
-          <sub class="intro_title-sub">One more!</sub>
-
-        </div>
-
-
-      </div>
-
-
-
-    </main>
-  </header>
-
-  <!--buttons-->
-  <div class="container">
-    <div class="buttons">
-      <select class="buttons_opt">
-        <optgroup label="Projects:">
-          <option value="All Projects">All Projects</option>
-          <option value="My Projects">My Projects</option>
-          <option value="Team Projects">Team Projects</option>
-        </optgroup>
-      </select>
-      <button class="buttons_bt">New Projects</button>
+<nav class="anlife_bar anlife_bar-expand-lg anlife_bar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="anlife_bar-brand" href="#">Bootstrap</a>
+    <div class="collapse anlife_bar-collapse" id="anlife_barScroll">
+      <ul class="anlife_bar-nav me-auto my-2 my-lg-0 anlife_bar-anlife-scroll" style="--bs-scroll-height: 100px;">
+        <li class="anlife-item">
+          <a class="anlife-link active" aria-current="page" href="#">Something</a>
+        </li>
+        <li class="anlife-item">
+          <a class="anlife-link" href="#">Something</a>
+        </li>
+        <li class="anlife-item">
+          <a class="anlife-link" href="#">Something</a>
+        </li>
+        <li class="anlife-item">
+          <a class="anlife-link" href="#">Something</a>
+        </li>
+        <li class="anlife-item">
+          <a class="anlife-link" href="#">Something</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2 bg-dark" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+               viewBox="0 0 16 16">
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg>
+        </button>
+        <button class="btn btn-outline-secondary ms-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-3x3"
+               viewBox="0 0 16 16">
+            <path
+              d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5v-13zM1.5 1a.5.5 0 0 0-.5.5V5h4V1H1.5zM5 6H1v4h4V6zm1 4h4V6H6v4zm-1 1H1v3.5a.5.5 0 0 0 .5.5H5v-4zm1 0v4h4v-4H6zm5 0v4h3.5a.5.5 0 0 0 .5-.5V11h-4zm0-1h4V6h-4v4zm0-5h4V1.5a.5.5 0 0 0-.5-.5H11v4zm-1 0V1H6v4h4z"/>
+          </svg>
+        </button>
+        <img class="user_photo ms-1" src="img/week4_700.jpg" alt="">
+      </form>
     </div>
   </div>
-  <!--Cards-->
-  <div class="cards">
-    <div class="container">
-      <div class="cards_all">
-        <div class="cards_project">
-          <div class="cards_filling fone_1">
-            <h5 class="cards_filling-name">Biometrics Autentification</h5>
-            <p class="cards_filling-content">Following the main US election candidants analyzing milions of tional trned
-              on each of the candidantes. twits of their followers with comments we can see (...)</p>
-          </div>
-          <div class="cards_footer">
-            <div class="teaminfo">
-              <p>Team</p>
-              <img class="team_img" src="image/5977114723b1f0a40fc9a036fe7757d0.jpg" alt="">
-              <img class="team_img" src="image/74bf2ba3483133726ae57c2e99d0fb4f.jpg" alt="">
-              <img class="team_img" alt="" style="background-color: aquamarine;">
-              <img class="team_img" alt="" style="background-color: rosybrown;">
-            </div>
-            <div class="team-folovers">
-              <p class="team_link">
-                <svg class="team-folovers_icon">
-                  <use xlink:href="#heart"></use>
-                </svg>
-              <p>1</p>
-              </p>
-              <p class="team_link">
-                <svg class="team-folovers_icon">
-                  <use xlink:href="#eye"></use>
-                </svg>
-              <p>0</p>
-              </p>
-            </div>
-          </div>
-        </div>
+</nav>
 
 
-        <div class="cards_project">
-          <div class="cards_filling">
-            <h5 class="cards_filling-name">Biometrics Autentification</h5>
-            <p class="cards_filling-content">Following the main US election candidants analyzing milions of tional trned
-              on each of the candidantes. twits of their followers with comments we can see (...)</p>
-          </div>
-          <div class="cards_footer">
-            <div class="teaminfo">
-              <p>Team</p>
-              <img class="team_img" src="image/5977114723b1f0a40fc9a036fe7757d0.jpg" alt="">
-              <img class="team_img" src="image/74bf2ba3483133726ae57c2e99d0fb4f.jpg" alt="">
-              <img class="team_img" alt="" style="background-color: aquamarine;">
-              <img class="team_img" alt="" style="background-color: rosybrown;">
-            </div>
-            <div class="team-folovers">
-              <p class="team_link">
-                <svg class="team-folovers_icon">
-                  <use xlink:href="#heart"></use>
-                </svg>
-              <p>1</p>
-              </p>
-              <p class="team_link">
-                <svg class="team-folovers_icon">
-                  <use xlink:href="#eye"></use>
-                </svg>
-              <p>0</p>
-              </p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="cards_project">
-          <div class="cards_filling">
-            <h5 class="cards_filling-name">Biometrics Autentification</h5>
-            <p class="cards_filling-content">Following the main US election candidants analyzing milions of tional trned
-              on each of the candidantes. twits of their followers with comments we can see (...)</p>
-          </div>
-          <div class="cards_footer">
-            <div class="teaminfo">
-              <p>Team</p>
-              <img class="team_img" src="image/5977114723b1f0a40fc9a036fe7757d0.jpg" alt="">
-              <img class="team_img" src="image/74bf2ba3483133726ae57c2e99d0fb4f.jpg" alt="">
-              <img class="team_img" alt="" style="background-color: aquamarine;">
-              <img class="team_img" alt="" style="background-color: rosybrown;">
-            </div>
-            <div class="team-folovers">
-              <p class="team_link">
-                <svg class="team-folovers_icon">
-                  <use xlink:href="#heart"></use>
-                </svg>
-              <p>1</p>
-              </p>
-              <p class="team_link">
-                <svg class="team-folovers_icon">
-                  <use xlink:href="#eye"></use>
-                </svg>
-              <p>0</p>
-              </p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="cards_project">
-          <div class="cards_filling">
-            <h5 class="cards_filling-name">Biometrics Autentification</h5>
-            <p class="cards_filling-content">Following the main US election candidants analyzing milions of tional trned
-              on each of the candidantes. twits of their followers with comments we can see (...)</p>
-          </div>
-          <div class="cards_footer">
-            <div class="teaminfo">
-              <p>Team</p>
-              <img class="team_img" src="image/5977114723b1f0a40fc9a036fe7757d0.jpg" alt="">
-              <img class="team_img" src="image/74bf2ba3483133726ae57c2e99d0fb4f.jpg" alt="">
-              <img class="team_img" alt="" style="background-color: aquamarine;">
-              <img class="team_img" alt="" style="background-color: rosybrown;">
-            </div>
-            <div class="team-folovers">
-              <p class="team_link">
-                <svg class="team-folovers_icon">
-                  <use xlink:href="#heart"></use>
-                </svg>
-              <p>1</p>
-              </p>
-              <p class="team_link">
-                <svg class="team-folovers_icon">
-                  <use xlink:href="#eye"></use>
-                </svg>
-              <p>0</p>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="cards_project">
-          <div class="cards_filling">
-            <h5 class="cards_filling-name">Biometrics Autentification</h5>
-            <p class="cards_filling-content">Following the main US election candidants analyzing milions of tional trned
-              on each of the candidantes. twits of their followers with comments we can see (...)</p>
-          </div>
-          <div class="cards_footer">
-            <div class="teaminfo">
-              <p>Team</p>
-              <img class="team_img" src="image/5977114723b1f0a40fc9a036fe7757d0.jpg" alt="">
-              <img class="team_img" src="image/74bf2ba3483133726ae57c2e99d0fb4f.jpg" alt="">
-              <img class="team_img" alt="" style="background-color: aquamarine;">
-              <img class="team_img" alt="" style="background-color: rosybrown;">
-            </div>
-            <div class="team-folovers">
-              <p class="team_link">
-                <svg class="team-folovers_icon">
-                  <use xlink:href="#heart"></use>
-                </svg>
-              <p>1</p>
-              </p>
-              <p class="team_link">
-                <svg class="team-folovers_icon">
-                  <use xlink:href="#eye"></use>
-                </svg>
-              <p>0</p>
-              </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/Accenture-Unleash-Marketplace-1200x400.jpeg" class="d-block" width="1800" height="600" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/beijing-1200x400.jpeg" class="d-block" width="1800" height="600" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/download.jfif" class="d-block" width="1800" height="600" alt="...">
     </div>
   </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
-  <script src="js/app.js"></script>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-md-block d-lg-none col-md-4 bg-light">
+      <p class="text-opacity-25 mt-3">My Projects</p>
+      <div class="card mt-3 col-md-11 d-inline-block">
+        <div class="card-body">
+          <p class="card-header text-center">Biometric Authentification</p>
+          <p class="card-text mt-5 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
+            aperiam atque commodi cum cumque fugiat quis quo quod sit sunt. Dolores pariatur rerum tenetur vitae!</p>
+          <div class="card-footer d-flex justify-content-between">
+            <div class="d-flex">
+              <p class="watches ms-1">Team</p>
+              <img class="user_photo ms-1" src="img/week4_700.jpg" alt="">
+              <img class="user_photo ms-1" src="img/week4_700.jpg" alt="">
+            </div>
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                   class="bi bi-heart-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+              </svg>
+              <p class="ms-1 watches">1</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                   class="bi bi-eye-fill ms-1" viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+              </svg>
+              <p class="ms-1 watches">1</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-8 col-lg-12 pb-5 dark-bg">
+      <div class="px-2 container-fluid d-flex justify-content-between mt-3">
+        <div class="btn-group">
+          <button type="button" class="btn btn-danger">Move</button>
+          <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+            <span class="visually-hidden">Rolling stoner</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">lorem</a></li>
+            <li><a class="dropdown-item" href="#">lorem</a></li>
+          </ul>
+        </div>
+        <button class="btn btn-warning">New Project</button>
+      </div>
+    </div>
+  </div>
+  <div class="row dark-bg">
+    <div class="mt-3 col-sm-12 col-md-6 col-xl-3">
+      <div class="card bg-danger">
+        <div class="card-body">
+          <p class="card-header text-center">The Voynich Manuscript, or Voynich Manuscript</p>
+          <p class="card-text mt-5 text-center">
+            The Voynich Manuscript, or Voynich Manuscript (also known as Beinecke and VMS ),
+            is an illustrated codex written by an unknown author in an unknown language using an unknown alphabet.
+            The exact time of the manuscript's production remains unknown, but its history can be traced back to the 16th
+            century. Based on the results of radiocarbon analysis of fragments of the manuscript, chemist and archaeometrist
+            at the University of Arizona Greg Hodgins determined that the parchment for the manuscript was cut between 1404
+            and 1438 during the early Renaissance. The manuscript contains only one realistic depiction of a city
+            with a dovetail battlement. At the beginning of the 15th century, such teeth were mainly found in Northern Italy;
+            later they became more common.
+          </p>
+          <div class="card-footer d-flex justify-content-between bg-white">
+            <div class="d-flex">
+              <p class="watches ms-1">Team</p>
+              <img class="user_photo ms-1" src="img/week4_700.jpg" alt="">
+              <img class="user_photo ms-1" src="img/week4_700.jpg" alt="">
+            </div>
+            <div class="d-flex align-items-center">
+              <i class="bi bi-heart-fill"></i>
+              <p class="ms-1 watches">1</p>
+              <i class="bi bi-eye-fill"></i>
+              <p class="ms-1 watches">1</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-3 col-sm-12 col-md-6 col-xl-3">
+      <div class="card bg-primary">
+        <div class="card-body">
+          <p class="card-header text-center">The Voynich Manuscript, or Voynich Manuscript</p>
+          <p class="card-text mt-5 text-center">
+            The Voynich Manuscript, or Voynich Manuscript (also known as Beinecke and VMS ),
+            is an illustrated codex written by an unknown author in an unknown language using an unknown alphabet.
+            The exact time of the manuscript's production remains unknown, but its history can be traced back to the 16th
+            century. Based on the results of radiocarbon analysis of fragments of the manuscript, chemist and archaeometrist
+            at the University of Arizona Greg Hodgins determined that the parchment for the manuscript was cut between 1404
+            and 1438 during the early Renaissance. The manuscript contains only one realistic depiction of a city
+            with a dovetail battlement. At the beginning of the 15th century, such teeth were mainly found in Northern Italy;
+            later they became more common.
+          </p>
+          <div class="card-footer d-flex justify-content-between bg-white">
+            <div class="d-flex">
+              <p class="watches ms-1">Team</p>
+              <img class="user_photo ms-1" src="img/week4_700.jpg" alt="">
+              <img class="user_photo ms-1" src="img/week4_700.jpg" alt="">
+            </div>
+            <div class="d-flex align-items-center">
+              <i class="bi bi-heart-fill"></i>
+              <p class="ms-1 watches">1</p>
+              <i class="bi bi-eye-fill"></i>
+              <p class="ms-1 watches">1</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-3 col-sm-12 col-md-6 col-xl-3">
+      <div class="card bg-warning">
+        <div class="card-body">
+          <p class="card-header text-center">The Voynich Manuscript, or Voynich Manuscript</p>
+          <p class="card-text mt-5 text-center">
+            The Voynich Manuscript, or Voynich Manuscript (also known as Beinecke and VMS ),
+            is an illustrated codex written by an unknown author in an unknown language using an unknown alphabet.
+            The exact time of the manuscript's production remains unknown, but its history can be traced back to the 16th
+            century. Based on the results of radiocarbon analysis of fragments of the manuscript, chemist and archaeometrist
+            at the University of Arizona Greg Hodgins determined that the parchment for the manuscript was cut between 1404
+            and 1438 during the early Renaissance. The manuscript contains only one realistic depiction of a city
+            with a dovetail battlement. At the beginning of the 15th century, such teeth were mainly found in Northern Italy;
+            later they became more common.
+          </p>
+          <div class="card-footer d-flex justify-content-between bg-white">
+            <div class="d-flex">
+              <p class="watches ms-1">Team</p>
+              <img class="user_photo ms-1" src="img/week4_700.jpg" alt="">
+              <img class="user_photo ms-1" src="img/week4_700.jpg" alt="">
+            </div>
+            <div class="d-flex align-items-center">
+              <i class="bi bi-heart-fill"></i>
+              <p class="ms-1 watches">1</p>
+              <i class="bi bi-eye-fill"></i>
+              <p class="ms-1 watches">1</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-3 col-sm-12 col-md-6 col-xl-3">
+      <div class="card bg-info">
+        <div class="card-body">
+          <p class="card-header text-center">The Voynich Manuscript, or Voynich Manuscript</p>
+          <p class="card-text mt-5 text-center">
+            The Voynich Manuscript, or Voynich Manuscript (also known as Beinecke and VMS ),
+            is an illustrated codex written by an unknown author in an unknown language using an unknown alphabet.
+            The exact time of the manuscript's production remains unknown, but its history can be traced back to the 16th
+            century. Based on the results of radiocarbon analysis of fragments of the manuscript, chemist and archaeometrist
+            at the University of Arizona Greg Hodgins determined that the parchment for the manuscript was cut between 1404
+            and 1438 during the early Renaissance. The manuscript contains only one realistic depiction of a city
+            with a dovetail battlement. At the beginning of the 15th century, such teeth were mainly found in Northern Italy;
+            later they became more common.
+          </p>
+          <div class="card-footer d-flex justify-content-between bg-white">
+            <div class="d-flex">
+              <p class="watches ms-1">Team</p>
+              <img class="user_photo ms-1" src="img/week4_700.jpg" alt="">
+              <img class="user_photo ms-1" src="img/week4_700.jpg" alt="">
+            </div>
+            <div class="d-flex align-items-center">
+              <i class="bi bi-heart-fill"></i>
+              <p class="ms-1 watches">1</p>
+              <i class="bi bi-eye-fill"></i>
+              <p class="ms-1 watches">1</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-3 col-sm-12 col-md-6 col-xl-3">
+      <div class="card bg-info">
+        <div class="card-body">
+          <p class="card-header text-center">The Voynich Manuscript, or Voynich Manuscript</p>
+          <p class="card-text mt-5 text-center">
+            The Voynich Manuscript, or Voynich Manuscript (also known as Beinecke and VMS ),
+            is an illustrated codex written by an unknown author in an unknown language using an unknown alphabet.
+            The exact time of the manuscript's production remains unknown, but its history can be traced back to the 16th
+            century. Based on the results of radiocarbon analysis of fragments of the manuscript, chemist and archaeometrist
+            at the University of Arizona Greg Hodgins determined that the parchment for the manuscript was cut between 1404
+            and 1438 during the early Renaissance. The manuscript contains only one realistic depiction of a city
+            with a dovetail battlement. At the beginning of the 15th century, such teeth were mainly found in Northern Italy;
+            later they became more common.
+          </p>
+          <div class="card-footer d-flex justify-content-between bg-white">
+            <div class="d-flex">
+              <p class="watches ms-1">Team</p>
+              <img class="user_photo ms-1" src="img/week4_700.jpg" alt="">
+              <img class="user_photo ms-1" src="img/week4_700.jpg" alt="">
+            </div>
+            <div class="d-flex align-items-center">
+              <i class="bi bi-heart-fill"></i>
+              <p class="ms-1 watches">1</p>
+              <i class="bi bi-eye-fill"></i>
+              <p class="ms-1 watches">1</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="js/bundle.js"></script>
 </body>
-
 </html>

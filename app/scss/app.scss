@@ -1,9 +1,29 @@
 @import "variables";
 @import "reset";
-@import "container";
-@import "header";
-@import "nav";
-@import "main";
-@import "button and optgroupe";
-@import "card";
 @import "media-query";
+
+body{
+  background: rgba(35,32,35,0.92);
+}
+.dark-bg{
+  background: rgba(35,32,35,0.92);
+}
+
+.bg-white{
+  background: white!important;
+}
+.color-bg{
+  background: #6a3b75;
+}
+.user_photo{
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+}
+
+.watches{
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+

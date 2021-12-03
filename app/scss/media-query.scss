@@ -1,40 +1,16 @@
-/* Extra small devices (portrait phones, less than 576px)*/
-/* No media query for `xs` since this is the default in Bootstrap*/
+@media (max-width: 576px) {
+}
 
-/*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
+@media (max-width: 768px) {
+  .dark-bg{
+    background-color: antiquewhite;
+  }
+}
+
+@media (max-width: 992px) {
 
 }
 
-/*Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {
-    
-}
-
-/*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {
-    .container{
-        width: auto;
-        max-width: 1200px;
-    }
-    
-    main {
-        display: flex;  
-    } 
-    .cards_project{
-        margin: 10px;
-    }
-    .header_filling{
-        display: none;
-    }
-    .nav{
-        display: flex;
-    }
-}
-
-/*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-    .container{
-        max-width: 3840px;   
-    }   
+
 }
