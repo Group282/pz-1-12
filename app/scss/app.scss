@@ -27,3 +27,18 @@ body{
   margin-top: 10px;
 }
 
+.anlife-size{
+  width: 80%;
+  display: flex;
+}
+
+.anlife-line{
+  height: 30px;
+}
+
+.anlife_size-search{
+  width: 300px;
+  height: 30px !important;
+  background: $background-color-header_search;
+}
+

@@ -19,6 +19,7 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
@@ -48,9 +49,145 @@ table {
   border-spacing: 0;
 }
 
-@media (max-width: 768px) {
-  .dark-bg {
-    background-color: antiquewhite;
+/* Extra small devices (portrait phones, less than 576px)*/
+/* No media query for `xs` since this is the default in Bootstrap*/
+/*Devices (768 and up)*/
+@media (min-width: 1px) {
+  .anlife-carousel {
+    display: none;
+  }
+
+  .anlife-direction {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .anlife-card {
+    width: 65%;
+    height: auto;
+  }
+
+  .anlife-png_list {
+    display: inline;
+  }
+
+  .anlife-png_grid {
+    display: none;
+  }
+
+  .anlife-flex_justify {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .anlife-window {
+    display: none;
+  }
+
+  .anlife-background {
+    background: black !important;
+  }
+}
+/*Devices (1024 and up)*/
+@media (min-width: 1024px) {
+  .anlife-line {
+    display: none;
+  }
+
+  .anlife-carousel {
+    display: inline;
+  }
+
+  .anlife-direction {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+  }
+
+  .anlife-card {
+    width: 45%;
+    height: auto;
+  }
+
+  .anlife-png_list {
+    display: none;
+  }
+
+  .anlife-png_grid {
+    display: inline;
+  }
+
+  .anlife-flex_justify {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+/*Devices (tablets, 1280 and up)*/
+@media (min-width: 1280px) {
+  .anlife-window {
+    height: 165vh;
+    width: 50%;
+    display: inline;
+    background: #c2c2c2;
+  }
+
+  .anlife-card1 {
+    width: 90%;
+    height: auto;
+  }
+
+  .anlife-background {
+    background: white !important;
+  }
+}
+/*Devices (desktops, 1440 and up)*/
+@media (min-width: 1440px) {
+  .anlife-window {
+    display: none;
+  }
+
+  .anlife-background {
+    background: black !important;
+  }
+
+  .anlife-card {
+    width: 23%;
+    height: auto;
   }
 }
 body {
@@ -79,4 +216,22 @@ body {
   font-size: 20px;
   font-weight: 500;
   margin-top: 10px;
+}
+
+.anlife-size {
+  width: 80%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.anlife-line {
+  height: 30px;
+}
+
+.anlife_size-search {
+  width: 300px;
+  height: 30px !important;
+  background: #c2c2c2;
 }

@@ -6,15 +6,17 @@ const uglify = require('gulp-uglifyjs');
 const cssnano = require('gulp-cssnano');
 const rename = require('gulp-rename');
 const del = require('del');
-const imagemin = require('gulp-imagemin');
 const pngquant = require('imagemin-pngquant');
 const cache = require('gulp-cache');
 const autoprefixer = require('gulp-autoprefixer');
+const sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('sass', function () {
   return gulp.src('app/scss/app.scss')
+    .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {cascade: true}))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('app/css'))
     .pipe(browserSync.reload({stream: true}))
 });
@@ -55,17 +57,6 @@ gulp.task('clean', async function () {
   return del.sync('build');
 });
 
-gulp.task('img', function () {
-  return gulp.src('app/img/**/*')
-    .pipe(cache(imagemin({
-      interlaced: true,
-      progressive: true,
-      svgoPlugins: [{removeViewBox: false}],
-      use: [pngquant()]
-    }))/**/)
-    .pipe(gulp.dest('dist/img'));
-});
-
 gulp.task('copy', async function () {
 
   gulp.src([
@@ -95,4 +86,4 @@ gulp.task('watch', function () {
 });
 
 gulp.task('default', gulp.parallel('sass', 'js-dev', 'browser-sync', 'watch'));
-gulp.task('build', gulp.series('clean', 'img', 'sass', 'js-prod', 'copy'));
+gulp.task('build', gulp.series('clean', 'sass', 'js-prod', 'copy'));
