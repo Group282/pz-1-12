@@ -52,7 +52,7 @@ Follow this pattern for organization of developed components.
 </html>
 ```
 ### Design for 768
-<img src="https://user-images.githubusercontent.com/10829855/134765111-3b35611a-88a4-40ed-81d5-c7cb256252dd.png" alt="Design for 768" width="400"/>
+    <img src="https://user-images.githubusercontent.com/10829855/134765111-3b35611a-88a4-40ed-81d5-c7cb256252dd.png" alt="Design for 768" width="400"/>
 
 ### Design for 1024
 <img src="https://user-images.githubusercontent.com/10829855/134765182-f2fcbd28-faa6-4fd1-a5e0-54978d4e42c8.png" alt="Design for 1024" width="800"/>

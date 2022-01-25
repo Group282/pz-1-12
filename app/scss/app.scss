@@ -3,18 +3,57 @@
 @import "media-query";
 
 body{
-  background: rgba(35,32,35,0.92);
+  background: $background-color-div;
 }
+
 .dark-bg{
-  background: rgba(35,32,35,0.92);
+  background: $background-color-div;
+}
+
+.virsta{
+
+  &-fill-png{
+    fill: $background-color-div2;
+  }
+
+  &-bg-gray{
+    background: $background-color-gray;
+  }
+
+  &-size{
+    width: 80%;
+    display: flex;
+
+    &-search{
+      margin-left: 10px;
+      width: 300px;
+      height: 50px !important;
+      background: $background-color-header_search;
+    }
+  }
+
+  &-line{
+    height: 30px;
+  }
+
+  &-width-png-30{
+    width: 30px;
+    fill: #535353;
+  }
+
+  &-card-body{
+    height: 275px;
+  }
 }
 
 .bg-white{
-  background: white!important;
+  background: $background-color-div2 !important;
 }
+
 .color-bg{
-  background: #6a3b75;
+  background: $background-color-pink;
 }
+
 .user_photo{
   height: 50px;
   width: 50px;
@@ -27,18 +66,4 @@ body{
   margin-top: 10px;
 }
 
-.virsta-size{
-  width: 80%;
-  display: flex;
-}
-
-.virsta-line{
-  height: 30px;
-}
-
-.virsta_size-search{
-  width: 300px;
-  height: 30px !important;
-  background: $background-color-header_search;
-}
 
