@@ -20,6 +20,15 @@ body{
     background: $background-color-gray;
   }
 
+  &_background-btn_New_Project{
+    background-color: #ff7100 !important;
+    border-color: #ff7100;
+  }
+
+  &_w-150{
+    width: 150px;
+  }
+
   &_size{
     width: 80%;
     display: flex;
