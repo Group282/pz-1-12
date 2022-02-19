@@ -1,24 +1,253 @@
 /* Extra small devices (portrait phones, less than 576px)*/
 /* No media query for `xs` since this is the default in Bootstrap*/
 
-/*Small devices (landscape phones, 576px and up)*/
-@media (max-width: 576px) {
+/*Devices (768 and up)*/
+@media (min-width: 1px) {
+  .virsta {
+    &-user_photo {
+      background: #6a3b75;
+      border: 1px solid black;
 
-}
+      &-div {
+        display: none;
 
-/*Medium devices (tablets, 768px and up)*/
-@media (max-width: 768px) {
-  .dark-bg{
-    background-color: antiquewhite;
+        &_img {
+
+          &1 {
+            border: 1px solid black;
+            background-image: url($img1);
+            background-size: 47px 47px;
+          }
+
+          &2 {
+            border: 1px solid black;
+            background-image: url($img2);
+            background-size: 47px 47px;
+          }
+        }
+      }
+
+      &2 {
+        display: inline;
+        background: lawngreen;
+        border: 1px solid black;
+      }
+    }
+
+    &-carousel {
+      display: none;
+    }
+
+    &-card {
+      width: 65%;
+      height: auto;
+
+      &-add {
+        display: none;
+      }
+    }
+
+    &-direction {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-png {
+
+      &_grid {
+        display: none;
+      }
+
+      &_list {
+        display: inline;
+      }
+    }
+
+    &-flex_justify {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-window {
+      display: none;
+    }
+
+    &-background {
+      background: $background-color-div;
+    }
   }
 }
 
-/*Large devices (desktops, 992px and up)*/
-@media (max-width: 992px) {
 
+/*Devices (1024 and up)*/
+@media (min-width: 1024px) {
+  .virsta {
+    &-user_photo {
+      background: deeppink;
+
+      &-div {
+        background: #505050;
+        border: 1px solid black;
+        display: flex;
+        font-size: 18px;
+        align-items: center;
+        justify-content: center;
+
+        &_img {
+
+          &1 {
+            background-image: url($img3);
+            background-size: 40px 40px;
+          }
+
+          &2 {
+            background-image: url($img4);
+            background-size: 40px 40px;
+          }
+        }
+      }
+
+      &2 {
+        background: navajowhite;
+      }
+    }
+
+    &-line {
+      display: none;
+    }
+
+    &-background {
+      background: $background-color-gray;
+    }
+
+    &-carousel {
+      display: inline;
+    }
+
+    &-direction {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    &-card {
+      width: 45%;
+      height: auto;
+    }
+
+    &-png{
+
+      &_list {
+        display: none;
+      }
+
+      &_grid {
+        display: inline;
+      }
+    }
+
+    &-flex_justify {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  .user_photo {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .watches {
+    font-size: 15px !important;
+  }
 }
 
-/*Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
+/*Devices (tablets, 1280 and up)*/
+@media (min-width: 1280px) {
+  .virsta {
+    &-user_photo {
+      background: turquoise;
 
+      &-div {
+
+        &_img {
+
+          &1 {
+            background-image: url($img5);
+            background-size: 40px 40px;
+          }
+
+          &2 {
+            background-image: url($img6);
+            background-size: 40px 40px;
+          }
+        }
+      }
+
+      &2 {
+        display: none;
+      }
+    }
+
+    &-window {
+      height: 200vh;
+      width: 50%;
+      display: inline;
+      background: $background-color-header_search;
+    }
+
+    &-card1 {
+      width: 97%;
+      height: auto;
+    }
+
+    &-background {
+      background: $background-color-div2 !important;
+    }
+  }
 }
+
+/*Devices (desktops, 1440 and up)*/
+@media (min-width: 1440px) {
+  .virsta {
+    &-user_photo {
+      display: none;
+
+      &-div {
+
+        &_img {
+
+          &1 {
+            background-image: url($img7);
+            background-size: 40px 40px;
+          }
+
+          &2 {
+            background-image: url($img8);
+            background-size: 40px 40px;
+          }
+        }
+      }
+    }
+
+    &-window {
+      display: none;
+    }
+
+    &-card{
+      width: 23%;
+      height: auto;
+
+      &-add {
+        display: inline;
+      }
+    }
+
+    &-background {
+      background: $background-color-gray !important;
+    }
+  }
+}
+
